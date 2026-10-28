@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Museo-Sistema</title></head>
+<body>
+  <h1>Museo-Sistema</h1>
+  <p>Estado del backend: <span id="api">...</span></p>
+  <p>Estado de la base de datos: <span id="db">...</span></p>
+  <script>
+    fetch("/api/health").then(r => r.json()).then(d => api.textContent = d.status).catch(() => api.textContent = "error");
+    fetch("/api/health/db").then(r => r.json()).then(d => db.textContent = d.db).catch(() => db.textContent = "error");
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Secretos
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Sistema / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Backups locales
+backups/
