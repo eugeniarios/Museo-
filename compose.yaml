@@ -35,4 +35,4 @@ services:
       - backend
 
 volumes:
-  postgres_data:docker compose up --build
+  postgres_data:
